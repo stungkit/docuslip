@@ -19,7 +19,7 @@ from app.views import LoginView, HomeView, FieldTripsView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', LoginView.as_view()),
-    url(r'^home/', HomeView.as_view()),
-    url(r'^fieldtrips/', FieldTripsView.as_view()),
-]
+    url(r'^login/', LoginView.as_view()),
+    url(r'^index/', HomeView.as_view()),
+    url(r'^fieldtrips/', FieldTripsView.as_view())
+    ]
